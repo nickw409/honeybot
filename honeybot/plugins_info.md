@@ -28,9 +28,15 @@ Bot Will join a given channel in the server
 \
 <code>.channeljoin channel</code>
 
+# comic.py
+by Miguel Boekhold\
+returns a random comic
+\
+<code>.comic</code>
+
 # converter.py
 by Angelo Giacco\
-Gets the top 10 headlines around the world from bbc world news
+Converts currencies
 \
 <code>.convert \<\<base currency code>> \<\<target currency code>> \<\<amount>></code>
 
@@ -137,7 +143,7 @@ responds to .memo, demo of a basic memory plugin
 by Angelo Giacco\
 Play monopoly
 \
-<code>>>>.monopoly create</code>
+<code>.monopoly create</code>
 
 # news.py
 by Angelo Giacco\
@@ -198,6 +204,11 @@ A Google Translate plugin
 \
 <code>. Google Translator object.</code>
 
+# uptime.py
+by Nick Wiley, [Website](https://github.com/nickw409)
+A plugin to get the current uptime of the bot
+<code>.uptime</code>
+
 # username.py
 by Abdur-Rahmaan Janhangeer, pythonmembers.club\
 generates random usernames, used for inspiration
@@ -215,4 +226,3 @@ by Gabriele Ron, [Website](https://Macr0Nerd.github.io)\
 sends a wikipedia article on request based off of a search or random query
 \
 <code>.wiki \<command> \<topic></code>
-

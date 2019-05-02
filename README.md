@@ -1,4 +1,4 @@
-[![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
+﻿[![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
 ![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-pink.svg)
 ![Open Source Love](https://img.shields.io/badge/chat%20on-discord-green.svg)
 ![MadeinMoris](https://img.shields.io/badge/Made%20in-Moris-green.svg)
@@ -20,7 +20,7 @@ Psst. since i learnt py through this bot, we decided to keep a new-comers friend
 
 ## 📌 Contributing Countries
 
-🇲🇺 🇺🇸 🇨🇦 🇦🇷 🇮🇳 🇬🇧 🇬🇬 🇧🇷
+🇲🇺 🇺🇸 🇨🇦 🇦🇷 🇮🇳 🇬🇧 🇬🇬 🇧🇷 🇸🇽
 
 ## 📨 Follow the project on CodeTriage for updates!
 
@@ -45,6 +45,10 @@ who have never contributed to a project before, and Abdur-Rahmaan Janhangeer was
 [@justinwalker4179](https://github.com/IronPenguin4179)
 
 > HoneyBot is my first open source project and I had never worked with an IRC before. For school I was required to contribute to projects, but it was always so intimidating to me. I had always heard it gets easier once you've gotten over the fear wall, and that's what HoneyBot did for me. Excellent readme and quick feedback allowed me to make my first plugin. Now I've made many contributions, and look forward to any new issues I can get my hands on. Abdur-Rahmaan Janhangeer has been extremely helpful and I owe him and this project a lot for getting me into the open source world.
+
+[@mboekhold](https://github.com/mboekhold)
+
+> HoneyBot is a very friendly and welcoming community. They provided quick feedback and I would defenitely recommend this project to newcomers to give them that first boost on contributing to open source. HoneyBot helps you all the way there to issuing your first PR, step by step. I contributed a comic plugin, and I was thankful for meeting all the friendly and passionate people who are active in this community.
 
 ## ✂ Current Features
  * 🍬 OOP architecture
@@ -90,7 +94,9 @@ who have never contributed to a project before, and Abdur-Rahmaan Janhangeer was
 - 🎲 roll by [@GlennToms](https://github.com/GlennToms) - rolls a dice
 - ❓ help by [@edumello](https://github.com/edumello) - show link to plugin's information page
 - ✅ channeljoin by [@marceloyb](https://github.com/marceloyb) - join command for bot
-
+- :page_with_curl: comic by [@mboekhold](https://github.com/mboekhold) - returns a random comic
+- ⏱ uptime by [@nickw409](https://github.com/nickw409) - returns the uptime of the bot
+- 🔢 roman numeral converter by [@nickw409](https://github.com/nickw409) - converts a numeric input into roman numerals
 
 ## 🔧 Plugins Development
 
@@ -117,7 +123,7 @@ class Plugin:
     def __init__(self):
         pass
 
-    def run(self, incoming, methods, info):
+    def run(self, incoming, methods, info, bot_info):
         try:
             if info['command'] == 'PRIVMSG' and info['args'][1] == '.hi':
                 methods['send'](info['address'], 'hooo')
